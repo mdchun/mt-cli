@@ -11,7 +11,7 @@ module.exports = (name = 'app', templateURL = false) => {
   const choices = Object.keys(tmplJSON)
 
   console.log('')
-  logger.log('Welcome to mt project generator!')
+  logger.success('Welcome to mt project generator!')
   console.log('')
 
   const promptTask = inquirer.prompt([

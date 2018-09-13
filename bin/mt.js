@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 const program = require('commander')
+const logger = require('../src/lib/logger')
+
 let templateURL = null
 
 program
@@ -16,7 +18,7 @@ program
 .alias('i')
 .action(name => {
   if (!name) {
-    console.warn(`The default Apply name is currently userd: app`)
+    logger.warn(`The default Apply name is currently userd: app.`)
   }
   require('../src/init')(name, templateURL)
 })
