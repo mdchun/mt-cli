@@ -1,4 +1,4 @@
-## mt-init
+## mt init
 init project generator
 
 ## Install

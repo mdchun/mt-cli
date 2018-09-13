@@ -29,10 +29,7 @@ module.exports = (name = 'app', templateURL = false) => {
     }
   ])
 
-  Promise.all([
-    promptTask
-  ]).then(results => {
-    const answers = results[0]
+  promptTask.then(answers => {
     util.mkdirProject(answers, templateURL)
   })
 }
