@@ -1,0 +1,28 @@
+{
+  "name": "mt",
+  "version": "1.0.0",
+  "description": "Apply the initial tool",
+  "main": "index.js",
+  "bin": {
+    "mt": "./bin/mt.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "spa"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mdchun/mt-cli.git"
+  },
+  "author": "madechun",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.18.0",
+    "download": "^7.1.0",
+    "inquirer": "^6.2.0"
+  }
+}
